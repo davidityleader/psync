@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>品昕數位｜專案經理 PM 獎金制度</title>
+  <style>
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: "Noto Sans TC", "Microsoft JhengHei", Arial, sans-serif;
+      background: #0f172a;
+      color: #f8fafc;
+      line-height: 1.6;
+    }
+    section {
+      min-height: 100vh;
+      padding: 72px 8vw;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+    .cover {
+      background: radial-gradient(circle at top right, rgba(56,189,248,.28), transparent 36%), linear-gradient(135deg, #0f172a, #111827 55%, #0369a1);
+    }
+    .eyebrow {
+      color: #38bdf8;
+      letter-spacing: .18em;
+      font-weight: 800;
+      margin-bottom: 16px;
+    }
+    h1 {
+      font-size: clamp(44px, 7vw, 88px);
+      line-height: 1.05;
+      margin: 0 0 24px;
+      font-weight: 900;
+    }
+    h2 {
+      font-size: clamp(34px, 5vw, 60px);
+      line-height: 1.12;
+      margin: 0 0 20px;
+      font-weight: 900;
+    }
+    p, li { font-size: clamp(18px, 2vw, 24px); color: #cbd5e1; }
+    .highlight { color: #38bdf8; font-weight: 900; }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 22px;
+      margin-top: 40px;
+    }
+    .card {
+      background: rgba(255,255,255,.08);
+      border: 1px solid rgba(255,255,255,.12);
+      border-radius: 28px;
+      padding: 30px;
+      box-shadow: 0 24px 60px rgba(0,0,0,.22);
+    }
+    .card .label { color: #94a3b8; font-size: 18px; margin-bottom: 8px; }
+    .card .value { font-size: clamp(34px, 5vw, 58px); font-weight: 900; color: #38bdf8; }
+    .formula {
+      font-size: clamp(28px, 4vw, 48px);
+      font-weight: 900;
+      padding: 34px;
+      border-radius: 28px;
+      background: rgba(56,189,248,.12);
+      border: 1px solid rgba(56,189,248,.28);
+      margin-top: 34px;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      overflow: hidden;
+      border-radius: 24px;
+      background: rgba(255,255,255,.08);
+      margin-top: 32px;
+      font-size: 19px;
+    }
+    th, td {
+      padding: 15px 18px;
+      border-bottom: 1px solid rgba(255,255,255,.12);
+      text-align: right;
+    }
+    th:first-child, td:first-child { text-align: left; }
+    th {
+      color: #e0f2fe;
+      background: rgba(56,189,248,.18);
+      font-size: 20px;
+    }
+    tr:last-child td { border-bottom: none; }
+    .tier-0 td { color: #94a3b8; }
+    .tier-1 td:last-child, .tier-2 td:last-child { color: #38bdf8; font-weight: 900; }
+    .two-col {
+      display: grid;
+      grid-template-columns: 1fr 1.2fr;
+      gap: 32px;
+      align-items: start;
+    }
+    .big-number {
+      font-size: clamp(72px, 12vw, 150px);
+      line-height: 1;
+      font-weight: 1000;
+      color: #38bdf8;
+    }
+    .closing {
+      background: linear-gradient(135deg, #0284c7, #0891b2, #0f172a);
+    }
+    @media (max-width: 900px) {
+      .grid, .two-col { grid-template-columns: 1fr; }
+      section { padding: 56px 6vw; }
+      table { font-size: 16px; }
+      th, td { padding: 12px; }
+    }
+  </style>
+</head>
+<body>
+  <section class="cover">
+    <div class="eyebrow">PM BONUS SYSTEM</div>
+    <h1>品昕數位<br>專案經理 PM 獎金制度</h1>
+    <p>以「服務客戶數」作為專案管理責任與獎金加給的主要依據，建立清楚、透明、可預期的 PM 激勵制度。</p>
+  </section>
+
+  <section>
+    <h2>制度核心</h2>
+    <p>PM 的專案管理獎金依照當月實際服務客戶數計算。5 個客戶以下不發放專案管理獎金；從第 6 個客戶開始，每增加一位客戶即增加對應津貼。</p>
+    <div class="grid">
+      <div class="card">
+        <div class="label">0–5 個客戶</div>
+        <div class="value">$0</div>
+        <p>屬於基本職務範圍，不另發管理獎金。</p>
+      </div>
+      <div class="card">
+        <div class="label">6–10 個客戶</div>
+        <div class="value">$2,000</div>
+        <p>每位客戶每月加給 $2,000。</p>
+      </div>
+      <div class="card">
+        <div class="label">11–20 個客戶</div>
+        <div class="value">+$3,000</div>
+        <p>超過 10 位後，每新增一位客戶加給 $3,000。</p>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2>計算邏輯</h2>
+    <p>此制度採「階梯式」計算。前 5 位客戶無獎金；第 6–10 位以每位 $2,000 計算；第 11 位以上再以每位 $3,000 累加。</p>
+    <div class="formula">PM 獎金 = 6–10 位客戶津貼 + 11 位以上客戶津貼</div>
+    <p>例如：服務 15 位客戶，獎金為 10 位內 $20,000，加上第 11–15 位共 5 位 × $3,000，因此合計 $35,000。</p>
+  </section>
+
+  <section>
+    <div class="two-col">
+      <div>
+        <h2>0–20 位客戶獎金表</h2>
+        <p>下表可直接作為薪資計算、PM 績效溝通與內部制度公告使用。</p>
+      </div>
+      <table>
+        <thead>
+          <tr>
+            <th>服務客戶數</th>
+            <th>服務獎金加給</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="tier-0"><td>0</td><td>$0</td></tr>
+          <tr class="tier-0"><td>1</td><td>$0</td></tr>
+          <tr class="tier-0"><td>2</td><td>$0</td></tr>
+          <tr class="tier-0"><td>3</td><td>$0</td></tr>
+          <tr class="tier-0"><td>4</td><td>$0</td></tr>
+          <tr class="tier-0"><td>5</td><td>$0</td></tr>
+          <tr class="tier-1"><td>6</td><td>$12,000</td></tr>
+          <tr class="tier-1"><td>7</td><td>$14,000</td></tr>
+          <tr class="tier-1"><td>8</td><td>$16,000</td></tr>
+          <tr class="tier-1"><td>9</td><td>$18,000</td></tr>
+          <tr class="tier-1"><td>10</td><td>$20,000</td></tr>
+          <tr class="tier-2"><td>11</td><td>$23,000</td></tr>
+          <tr class="tier-2"><td>12</td><td>$26,000</td></tr>
+          <tr class="tier-2"><td>13</td><td>$29,000</td></tr>
+          <tr class="tier-2"><td>14</td><td>$32,000</td></tr>
+          <tr class="tier-2"><td>15</td><td>$35,000</td></tr>
+          <tr class="tier-2"><td>16</td><td>$38,000</td></tr>
+          <tr class="tier-2"><td>17</td><td>$41,000</td></tr>
+          <tr class="tier-2"><td>18</td><td>$44,000</td></tr>
+          <tr class="tier-2"><td>19</td><td>$47,000</td></tr>
+          <tr class="tier-2"><td>20</td><td>$50,000</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <section>
+    <h2>制度目的</h2>
+    <div class="grid">
+      <div class="card">
+        <div class="big-number">1</div>
+        <p>讓 PM 的管理責任被清楚量化。</p>
+      </div>
+      <div class="card">
+        <div class="big-number">2</div>
+        <p>鼓勵 PM 承接更多客戶並維持服務品質。</p>
+      </div>
+      <div class="card">
+        <div class="big-number">3</div>
+        <p>讓公司在擴張客戶數時，同步建立公平獎勵機制。</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="closing">
+    <h2>結論</h2>
+    <p>品昕數位 PM 獎金制度以服務客戶數為核心，前 5 位客戶視為基本職責；第 6 位起給予管理津貼；超過 10 位後提高每位客戶加給，鼓勵 PM 承擔更高管理責任並與公司共同成長。</p>
+  </section>
+</body>
+</html>
+
